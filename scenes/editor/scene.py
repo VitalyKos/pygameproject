@@ -16,12 +16,28 @@ class EditorScene(BaseScene):
                                       "Спрятать ->",
                                       self.hide, hover_sound=Sound("data/sounds/select_sound.wav"),
                                       font=pygame.font.Font(None, 30))
-        self.btn1 = Button("4%", "10%", 80, 80, "", self.btn1, None, "data/images/btn1.png" )
+
         self.objects.append(self.background)
-        self.objects.append(self.btn1)
+        self.objects.append(Button("4%", "10%", 80, 80, "", self.btn1, None, "data/images/btn1.png"))
+        self.objects.append(Button("4%", "30%", 80, 80, "", self.btn2, None, "data/images/btn2.png"))
+        self.objects.append(Button("4%", "50%", 80, 80, "", self.btn3, None, "data/images/btn3.png"))
+        self.objects.append(Button("4%", "70%", 80, 80, "", self.btn4, None, "data/images/btn4.png"))
+        self.objects.append(Button("4%", "90%", 80, 80, "", self.btn5, None, "data/images/btn5.png"))
 
     def hide(self):
         ...
 
     def btn1(self):
-        ...
+        print(1)
+
+    def btn2(self):
+        print(2)
+
+    def btn3(self):
+        print(3)
+
+    def btn4(self):
+        print(4)
+
+    def btn5(self):
+        print(5)

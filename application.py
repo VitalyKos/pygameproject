@@ -29,6 +29,7 @@ class Application:
 
     def scene_event(self):
         for event in pygame.event.get():
+            Settings.window_width, Settings.window_height = self.screen.get_size()
             if hasattr(event, "pos"):
                 event.pos = Settings.translate_coords(*event.pos)
             self.process_application_exit(event)
